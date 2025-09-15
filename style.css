@@ -1,0 +1,541 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+header {
+  position:fixed;
+  top: 0;
+  width: 100%;
+  background: #001f3f;       
+  color: #00bfff;           
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+/* Logo  */
+header .logo {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #aaf147;
+  transition: all 0.3s ease;
+}
+
+header .logo img {
+  height: 90px;   
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Shrink effect on scroll */
+header.scrolled .logo img {
+  height: 25px;   /
+}
+
+header.scrolled {
+  padding: 10px 40px;  
+  background: rgba(0, 31, 63, 0.95); 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+
+
+header nav a {
+  color: #ffffff;            
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #00bfff;            
+}
+
+/* Sign Up / Login Section */
+.auth-section {
+  background: #eeeeee;       
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.auth-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #ffffff;       
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,31,63,0.3);
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+  color: #001f3f;            
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #00bfff;
+  background: #f8f9fa;
+  color: #001f3f;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  background: #00bfff;       
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-container button:hover {
+  background: #001f3f;       
+}
+
+.auth-container p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #001f3f;
+}
+
+.auth-container span {
+  color: #00bfff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(60%);
+  animation: heroZoom 20s infinite alternate;
+}
+
+@keyframes heroZoom {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #eeeeee;
+}
+
+.hero-content .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #00bfff;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition-duration: 0.3s, transform 0.3s;
+}
+
+.hero-content .btn:hover {
+  background: #001f3f;
+  transform: translateY(-3px);
+}
+
+/* How to Rent a Bike Section */
+.how-to-rent {
+  padding: 80px 50px;
+  background: #eeeeee;
+  text-align: center;
+}
+
+.how-to-rent h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #001f3f;
+  animation: fadeIn 2s ease;
+}
+
+.how-to-rent .steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.how-to-rent .step {
+  flex: 1 1 200px;
+  max-width: 250px;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,191,255,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.how-to-rent .step:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,191,255,0.4);
+}
+
+.how-to-rent .step i {
+  font-size: 40px;
+  color: #00bfff;
+  margin-bottom: 15px;
+  animation: bounceIcon 2s infinite;
+}
+
+@keyframes bounceIcon {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.how-to-rent .step h3 {
+  margin-bottom: 10px;
+  color: #001f3f;
+}
+
+.how-to-rent .step p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Vehicles Section */
+.vehicles {
+  padding: 120px 50px 50px;
+  background: #f8f9fa;
+}
+
+.vehicles h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #001f3f;
+  font-size: 2.5rem;
+}
+
+.vehicles h3 {
+  margin: 30px 0 15px;
+  color: #00bfff;
+  font-size: 1.5rem;
+}
+
+.vehicle-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.vehicle-card {
+  flex: 1 1 250px;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,191,255,0.2);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,191,255,0.4);
+}
+
+.vehicle-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.vehicle-card img:hover {
+  transform: scale(1.05);
+}
+
+.vehicle-card h3 {
+  margin-bottom: 8px;
+  color: #001f3f;
+}
+
+.vehicle-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.badge {
+  display: inline-block;
+  background: #00bfff;
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #001f3f;
+  margin-bottom: 10px;
+}
+
+.vehicle-card .btn {
+  background: #00bfff;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition-duration:  0.3s, transform 0.3s;
+}
+
+.vehicle-card .btn:hover {
+  background: #001f3f;
+  transform: translateY(-2px);
+}
+
+/* Why Rent a Ride Section */
+.why-rent {
+  padding: 80px 50px;
+  background: #eeeeee;
+  text-align: center;
+}
+
+.why-rent h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #001f3f;
+  font-weight: bold;
+}
+
+.reasons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.reason {
+  flex: 1 1 220px;
+  max-width: 250px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,191,255,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #001f3f;
+}
+
+.reason:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,191,255,0.5);
+}
+
+.reason i {
+  font-size: 40px;
+  color: #00bfff;
+  margin-bottom: 15px;
+}
+
+.reason h3 {
+  color: #001f3f;
+  margin-bottom: 10px;
+}
+
+.reason p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Booking Section */
+.booking {
+  padding: 60px 20px;
+  background: #ffffff;
+  color: #001f3f;
+}
+
+.booking h2 {
+  text-align: center;
+  color: #00bfff;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.booking form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #eeeeee;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,31,63,0.3);
+}
+
+.booking label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #001f3f;
+}
+
+.booking input, 
+.booking select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background: #fff;
+  color: #001f3f;
+}
+
+.booking button {
+  width: 100%;
+  padding: 12px;
+  background: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration:  0.3s, transform 0.3s;
+}
+
+.booking button:hover {
+  background: #001f3f;
+  transform: translateY(-2px);
+}
+
+/* Font Awesome Icon */
+h3 i, label i, button i {
+  margin-right: 6px;
+  color: #00bfff;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+footer i {
+  font-size: 22px;
+  margin: 0 10px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+footer i:hover {
+  color: #00bfff;
+}
+
+footer {
+  background: #001f3f;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Popup Modal */
+.popup {
+  display: none; 
+  position: fixed; 
+  z-index: 2000;
+  left: 0; 
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center; 
+  align-items: center;
+}
+
+.popup-content {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  animation: popupFade 0.3s ease;
+}
+
+.popup-content h2 {
+  margin-bottom: 15px;
+  color: #001f3f;
+}
+
+.popup-content p {
+  color: #333;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  background: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.popup-content button:hover {
+  background: #001f3f;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #001f3f;
+  cursor: pointer;
+}
+
+@keyframes popupFade {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
