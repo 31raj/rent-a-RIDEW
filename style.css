@@ -1,9 +1,196 @@
+.btn, button.btn, .vehicle-card .btn, .hero-content .btn, .booking button, .auth-container button, .popup-content button {
+  box-shadow: 0 4px 16px rgba(0,191,255,0.18);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+.btn:hover, button.btn:hover, .vehicle-card .btn:hover, .hero-content .btn:hover, .booking button:hover, .auth-container button:hover, .popup-content button:hover {
+  background: #00bfff !important;
+  color: #fff !important;
+  box-shadow: 0 8px 32px rgba(0,191,255,0.28);
+  transform: translateY(-3px) scale(1.04);
+}
+
+.vehicle-card img {
+  box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+  border-radius: 14px;
+  border: 2px solid rgba(0,191,255,0.10);
+  background: rgba(255,255,255,0.10);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.vehicle-card img:hover {
+  box-shadow: 0 8px 32px rgba(0,191,255,0.28);
+  transform: scale(1.06);
+}
+
+header nav a.active, header nav a:focus {
+  color: #fff !important;
+  background: #00bfff;
+  border-radius: 8px;
+  padding: 6px 14px;
+  box-shadow: 0 2px 8px rgba(0,191,255,0.18);
+}
+
+.vehicle-card {
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.vehicle-card:hover {
+  box-shadow: 0 12px 32px rgba(0,191,255,0.32);
+  transform: translateY(-8px) scale(1.03);
+}
+
+input, select, textarea {
+  border: 2px solid #00bfff !important;
+  border-radius: 7px !important;
+  background: rgba(255,255,255,0.18) !important;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+  border: 2.5px solid #001f3f !important;
+  box-shadow: 0 0 8px #00bfff33;
+}
+.vehicles h3:nth-of-type(3) {
+  color: #00bfff !important;
+}
+.vehicles h3:nth-of-type(2) {
+  color: #00bfff !important;
+}
+.vehicles h3:first-of-type {
+  color: #00bfff !important;
+}
+.auth-section h2, .auth-container h2, .auth-container p, .auth-container input, .auth-container button, .auth-container span, .auth-container label {
+  color: #000 !important;
+}
+.how-to-rent h2, .how-to-rent .step h3, .how-to-rent .step p {
+  color: #000 !important;
+}
+header .logo span {
+  color: #aaf147 !important;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+.about, .about-section, #about, #about-website {
+  color: #111 !important;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.18), 0 1px 2px rgba(0,0,0,0.18);
+}
+
+#about-website h2, .about h2 {
+  color: #000 !important;
+  font-weight: 700;
+  text-shadow: 0 2px 16px rgba(255,255,255,0.22), 0 1px 2px rgba(0,0,0,0.22);
+}
+
+#about-website p, .about p {
+  color: #111 !important;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.18), 0 1px 2px rgba(0,0,0,0.18);
+}
+/* About Rent a Ride section transparency */
+.about, .about-section, #about {
+  background: rgba(255,255,255,0.13);
+  /* blur removed */
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+  padding: 40px 30px;
+}
+.how-to-rent, .vehicles, .booking, .why-rent, .auth-section, .popup-content {
+  color: #111 !important;
+  font-weight: 600;
+  text-shadow: 0 2px 12px rgba(255,255,255,0.18), 0 1px 2px rgba(0,0,0,0.18);
+}
+
+.how-to-rent .step, .vehicle-card, .reason, .auth-container {
+  color: #111 !important;
+  font-weight: 600;
+  text-shadow: 0 2px 12px rgba(255,255,255,0.18), 0 1px 2px rgba(0,0,0,0.18);
+}
+
+.how-to-rent .step h3, .vehicle-card h3, .reason h3, .booking h2, .vehicles h2, .why-rent h2 {
+  color: #000 !important;
+  font-weight: 700;
+  text-shadow: 0 2px 16px rgba(255,255,255,0.22), 0 1px 2px rgba(0,0,0,0.22);
+}
+
+.price, .badge {
+  color: #000 !important;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.18), 0 1px 2px rgba(0,0,0,0.18);
+}
+
+.booking label, .booking input, .booking select, .booking button {
+  color: #000 !important;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.18), 0 1px 2px rgba(0,0,0,0.18);
+}
+
+.auth-container input, .auth-container button {
+  color: #000 !important;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.18), 0 1px 2px rgba(0,0,0,0.18);
+}
+/* Improve text visibility on transparent backgrounds, but restore original hero section look */
+h1, h2, h3, h4, h5, h6 {
+  color: #001f3f !important;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.15), 0 1px 2px rgba(0,0,0,0.08);
+}
+
+p, label, span, .price, .badge, .auth-container p, .reason p, .vehicle-card p, .how-to-rent .step p, .booking label, .booking input, .booking select, .popup-content p {
+  color: #222 !important;
+  text-shadow: 0 1px 4px rgba(255,255,255,0.10);
+}
+
+.auth-container input, .booking input, .booking select {
+  color: #001f3f !important;
+}
+
+.auth-container button, .booking button, .popup-content button {
+  color: #fff !important;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.18);
+}
+
+.vehicle-card h3, .reason h3, .how-to-rent .step h3 {
+  color: #001f3f !important;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.12), 0 1px 2px rgba(0,0,0,0.08);
+}
+
+.vehicle-card p, .reason p, .how-to-rent .step p {
+  color: #222 !important;
+}
+
+.popup-content {
+  color: #001f3f !important;
+}
+
+/* Restore original hero section color and style */
+.hero-content {
+  background: rgba(0, 31, 63, 0.55);
+  border-radius: 18px;
+  padding: 32px 32px 28px 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  color: #fff !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.45);
+  /* blur removed for clear wallpaper under header */
+}
+.hero-content h1, .hero-content p, .hero-content .btn {
+  color: #fff !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.45);
+}
 /* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgba(34,40,49,0.5), rgba(34,40,49,0.5)), url('takashi-watanabe-f2DL8oI-7N8-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 100px;
 }
 
 /* Header */
@@ -27,7 +214,8 @@ header .logo {
   align-items: center;
   font-size: 22px;
   font-weight: bold;
-  color: #aaf147;
+  color: #aaf147 !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
   transition: all 0.3s ease;
 }
 
@@ -51,7 +239,7 @@ header.scrolled {
 
 
 header nav a {
-  color: #ffffff;            
+  color: #aaf147;            
   text-decoration: none;
   margin: 0 15px;
   font-weight: 500;
@@ -63,8 +251,10 @@ header nav a:hover {
 }
 
 /* Sign Up / Login Section */
+
 .auth-section {
-  background: #eeeeee;       
+  background: rgba(255,255,255,0.05); /* subtle glass effect */
+  /* blur removed */
   padding: 80px 20px;
   text-align: center;
 }
@@ -72,7 +262,8 @@ header nav a:hover {
 .auth-container {
   max-width: 400px;
   margin: 0 auto;
-  background: #ffffff;       
+  background: rgba(255,255,255,0.15);
+  /* blur removed */
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,31,63,0.3);
@@ -89,7 +280,7 @@ header nav a:hover {
   margin-bottom: 15px;
   border-radius: 6px;
   border: 1px solid #00bfff;
-  background: #f8f9fa;
+  background: rgba(255,255,255,0.25);
   color: #001f3f;
 }
 
@@ -182,7 +373,8 @@ header nav a:hover {
 /* How to Rent a Bike Section */
 .how-to-rent {
   padding: 80px 50px;
-  background: #eeeeee;
+  background: rgba(255,255,255,0.05);
+  /* blur removed for clear wallpaper under header */
   text-align: center;
 }
 
@@ -203,7 +395,8 @@ header nav a:hover {
 .how-to-rent .step {
   flex: 1 1 200px;
   max-width: 250px;
-  background: #ffffff;
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(8px);
   border-radius: 15px;
   padding: 25px;
   box-shadow: 0 5px 15px rgba(0,191,255,0.2);
@@ -240,7 +433,8 @@ header nav a:hover {
 /* Vehicles Section */
 .vehicles {
   padding: 120px 50px 50px;
-  background: #f8f9fa;
+  background: rgba(255,255,255,0.03);
+  /* blur removed */
 }
 
 .vehicles h2 {
@@ -265,7 +459,8 @@ header nav a:hover {
 
 .vehicle-card {
   flex: 1 1 250px;
-  background: #ffffff;
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(8px);
   border-radius: 15px;
   padding: 15px;
   box-shadow: 0 4px 12px rgba(0,191,255,0.2);
@@ -338,7 +533,8 @@ header nav a:hover {
 /* Why Rent a Ride Section */
 .why-rent {
   padding: 80px 50px;
-  background: #eeeeee;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(6px);
   text-align: center;
 }
 
@@ -359,7 +555,8 @@ header nav a:hover {
 .reason {
   flex: 1 1 220px;
   max-width: 250px;
-  background: #ffffff;
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(8px);
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0,191,255,0.3);
@@ -391,13 +588,14 @@ header nav a:hover {
 /* Booking Section */
 .booking {
   padding: 60px 20px;
-  background: #ffffff;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(4px);
   color: #001f3f;
 }
 
 .booking h2 {
   text-align: center;
-  color: #00bfff;
+  color: #18070b;
   margin-bottom: 25px;
   font-size: 2rem;
 }
@@ -405,41 +603,52 @@ header nav a:hover {
 .booking form {
   max-width: 500px;
   margin: 0 auto;
-  background: #eeeeee;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,31,63,0.3);
+  background: rgba(255,255,255,0.22);
+  /* blur removed */
+  padding: 38px 32px 32px 32px;
+  border-radius: 18px;
+  border: 2.5px solid #00bfff33;
+  box-shadow: 0 12px 36px rgba(0,31,63,0.18), 0 2px 8px rgba(0,191,255,0.10);
+  transition: box-shadow 0.3s, border 0.3s;
 }
 
 .booking label {
   display: block;
-  margin-bottom: 6px;
-  font-weight: 500;
+  margin-bottom: 8px;
+  font-weight: 700;
   color: #001f3f;
+  letter-spacing: 0.2px;
+  font-size: 1.07rem;
 }
 
 .booking input, 
 .booking select {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  background: #fff;
+  padding: 13px 14px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 2px solid #00bfff55;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.32);
   color: #001f3f;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,191,255,0.07);
+  transition: border 0.2s, box-shadow 0.2s;
 }
 
 .booking button {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   background: #00bfff;
-  color: white;
+  color: #fff;
   border: none;
-  border-radius: 8px;
-  font-size: 16px;
+  border-radius: 10px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
   cursor: pointer;
-  transition-duration:  0.3s, transform 0.3s;
+  box-shadow: 0 4px 16px rgba(0,191,255,0.18);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
 }
 
 .booking button:hover {
@@ -450,7 +659,7 @@ header nav a:hover {
 /* Font Awesome Icon */
 h3 i, label i, button i {
   margin-right: 6px;
-  color: #00bfff;
+  color: #090b07;
   font-size: 1.2em;
   vertical-align: middle;
 }
@@ -469,10 +678,18 @@ footer i:hover {
 
 footer {
   background: #001f3f;
-  color: #ffffff;
+  color: #fff !important;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+  font-weight: 700;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.45), 0 1px 2px rgba(255,255,255,0.10);
+}
+
+footer p, footer .social-icons, footer i {
+  color: #fff !important;
+  font-weight: 700;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.45), 0 1px 2px rgba(255,255,255,0.10);
 }
 
 /* Popup Modal */
@@ -490,7 +707,8 @@ footer {
 }
 
 .popup-content {
-  background: #ffffff;
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(10px);
   padding: 25px;
   border-radius: 12px;
   text-align: center;
@@ -539,3 +757,4 @@ footer {
   from { transform: scale(0.8); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
+
