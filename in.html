@@ -11,14 +11,13 @@
 
 <header>
   <div class="logo">
-    <span>₹ent a Ride</span>
+    <span style="color:#aaf147;font-weight:bold;">₹ent a Ride</span>
   </div>
   <nav>
     <a href="#home">Home</a>
-    <a href="#Login">login</a>
     <a href="#vehicles">Vehicles</a>
     <a href="#booking">Booking</a>
-    <a href="#contact">Contact</a>
+    <a href="#contact">Sign Up</a>
   </nav>
 </header>
 
@@ -28,19 +27,19 @@
         <img src="takashi-watanabe-f2DL8oI-7N8-unsplash.jpg" alt="Travel Road" class="hero-img">
         <div class="hero-content">
         <h1>Welcome to  ₹ent a Ride  </h1> 
-        <p>Affordable rides for students. Cars, Bikes, and E-Scooters available!</p>
+        <p>Affordable rides at your fingertips. Rent bikes, scooters, or cars—whenever you need, wherever you need </p>
         <a href="#vehicles" class="btn"><i class="fas fa-bolt"></i> Book Your Ride</a>
         </div>
     </section>
 
-    <!-- How to Rent  -->
+    <!-- How to Rent a Bike Section -->
     <section id="how-to-rent" class="how-to-rent">
     <h2>How to Rent a Bike</h2>
     <div class="steps">
         <div class="step">
         <i class="fas fa-user-check"></i>
         <h3>1. Sign Up / Login</h3>
-        <p>Create an account using your Student ID to access discounts.</p>
+        <p>Create an account using your  ID .</p>
         </div>
 
         <div class="step">
@@ -62,7 +61,7 @@
 
     </section>
 
-    <!-- Vehicles  -->
+    <!-- Vehicles Section -->
     <section id="vehicles" class="vehicles">
         <h2>Our Featured Vehicles</h2>
 
@@ -74,7 +73,7 @@
             <h3>Maruti Swift</h3>
             <p>Compact, fuel-efficient and student-friendly.</p>
             <span class="badge">Student Discount</span>
-            <p class="price">₹300/hr | ₹1500/day | ₹9000/week</p>
+            <p class="price">₹300/hr | ₹1800/day | ₹12000/week</p>
             <button class="btn">Rent Now</button>
         </div>
         <div class="vehicle-card">
@@ -82,7 +81,7 @@
             <h3>Hyundai i20</h3>
             <p>Comfortable hatchback for city rides.</p>
             <span class="badge">Student Discount</span>
-            <p class="price">₹350/hr | ₹1800/day | ₹12000/week</p>
+            <p class="price">₹350/hr | ₹2000/day | ₹14000/week</p>
             <button class="btn">Rent Now</button>
         </div>
         <div class="vehicle-card">
@@ -90,7 +89,7 @@
             <h3>Honda Amaze</h3>
             <p>Spacious and reliable sedan.</p>
             <span class="badge">Student Discount</span>
-            <p class="price">₹400/hr | ₹2000/day | ₹15000/week</p>
+            <p class="price">₹400/hr | ₹2200/day | ₹15000/week</p>
             <button class="btn">Rent Now</button>
         </div>
         </div>
@@ -103,7 +102,7 @@
             <h3>Bajaj Pulsar</h3>
             <p>Sporty and powerful for quick rides.</p>
             <span class="badge">Student Discount</span>
-            <p class="price">₹100/hr | ₹600/day | ₹6000/week</p>
+            <p class="price">₹150/hr | ₹900/day | ₹6000/week</p>
             <button class="btn">Rent Now</button>
         </div>
         <div class="vehicle-card">
@@ -164,7 +163,7 @@
             <h3>Ola Electric</h3>
             <p>Eco-friendly scooter for students.</p>
             <span class="badge">Student Discount</span>
-            <p class="price">₹150/hr | ₹600/day | ₹6000/week</p>
+            <p class="price">₹150/hr | ₹900/day | ₹6000/week</p>
             <button class="btn">Rent Now</button>
         </div>
         </div>
@@ -197,45 +196,88 @@
   </div>
 </section>
 
+v>
 
-    <!-- Booking Section -->
-    <section id="booking" class="booking">
-        <h2>Reserve Your Ride</h2>
-        <form>
-        <label for="vehicle"><i class="fas fa-car-side"></i> Select Vehicle</label>
-        <select id="vehicle" required>
-            <option value="">Choose...</option>
-            <option value="car">Car</option>
-            <option value="bike">Bike</option>
-            <option value="scooter">Scooter</option>
-        </select>
+<!-- Booking Section -->
+  <section id="booking" class="booking">
+  <h2>Reserve Your Ride</h2>
+  <form>
+    <label for="vehicle-type"><i class="fas fa-list"></i> Vehicle Type</label>
+    <select id="vehicle-type" required>
+      <option value="">Choose type...</option>
+      <option value="car">Car</option>
+      <option value="bike">Bike</option>
+      <option value="scooter">Scooter</option>
+    </select>
 
-        <label for="date"><i class="fas fa-calendar-alt"></i> Drop Date</label>
-        <input type="date" id="date" required>
+    <label for="vehicle"><i class="fas fa-car-side"></i> Select Vehicle</label>
+    <select id="vehicle" required>
+      <option value="">Choose...</option>
+      <option value="maruti-swift">Maruti Swift</option>
+      <option value="hyundai-i20">Hyundai i20</option>
+      <option value="honda-amaze">Honda Amaze</option>
+      <option value="bajaj-pulsar">Bajaj Pulsar</option>
+      <option value="royal-enfield">Royal Enfield</option>
+      <option value="ktm-duke">KTM Duke</option>
+      <option value="yamaha-r15">Yamaha R15</option>
+      <option value="hero-splendor">Hero Splendor</option>
+      <option value="honda-activa">Honda Activa</option>
+      <option value="tvs-jupiter">TVS Jupiter</option>
+      <option value="ola-electric">Ola Electric</option>
+    </select>
 
-        <label for="time"><i class="fas fa-clock"></i> Drop Time</label>
-        <input type="time" id="time" required>
+    <label for="date"><i class="fas fa-calendar-alt"></i> Drop Date</label>
+    <input type="date" id="date" required>
 
-        <button type="submit" class="btn"><i class="fas fa-check-circle"></i> Confirm Booking</button>
-        </form>
-    </section>
+  <label for="duration"><i class="fas fa-hourglass-half"></i> Duration (hours)</label>
+  <input type="number" id="duration" min="1" max="168" value="1" required style="width:100px;">
 
-    <section id="auth" class="auth-section">
-    <div class="auth-container">
+    <label for="time"><i class="fas fa-clock"></i> Drop Time</label>
+    <input type="time" id="time" required>
 
-        <!-- Sign Up Form -->
-        <form id="signup-form">
+    <!--  DL Verification -->
+    <label for="dl-number"><i class="fas fa-id-card"></i> Driving License Number</label>
+    <input type="text" id="dl-number" placeholder="Enter DL Number" required>
+
+    <label for="dl-upload"><i class="fas fa-upload"></i> Upload Driving License</label>
+    <input type="file" id="dl-upload" accept="image/*,.pdf" required>
+
+    <button type="submit" class="btn"><i class="fas fa-check-circle"></i> Confirm Booking</button>
+  </form>
+  <!-- Subtotal Section -->
+  <div id="subtotal-section" style="margin:30px auto 0 auto;max-width:400px;background:#f8f9fa;padding:20px 30px;border-radius:10px;box-shadow:0 2px 8px rgba(0,31,63,0.07);text-align:center;">
+    <h3 style="color:#001f3f;margin-bottom:10px;">Subtotal</h3>
+    <div style="font-size:1.3rem;color:#00bfff;" id="subtotal-amount">₹0</div>
+    <div id="subtotal-details" style="font-size:0.95rem;color:#555;margin-top:8px;"></div>
+  </div>
+</section>
+
+
+        
+    <!-- Sign Up Section -->
+    <section id="signup" class="auth-section">
+      <div class="auth-container">
         <h2>Sign Up</h2>
-        <input type="text" id="signup-name" placeholder="Full Name" required>
-        <!-- <input type="text" id="signup-id" placeholder="Student ID" required> -->
-        <input type="email" id="signup-email" placeholder="Email" required>
-        <input type="password" id="signup-password" placeholder="Password" required>
-        <button type="submit">Sign Up</button>
-        <p>Already have an account? <span id="show-login">Login</span></p>
+        <form id="signup-form">
+          <input type="text" id="signup-name" placeholder="Full Name" required>
+          <input type="email" id="signup-email" placeholder="Email" required>
+          <input type="password" id="signup-password" placeholder="Password" required>
+          <button type="submit">Sign Up</button>
         </form>
+        <p>Already have an account? <span id="show-login" style="color:#00bfff;cursor:pointer;">Login</span></p>
+      </div>
     </section>
 
-    <!-- Footer -->
+    
+<!-- About the Website Section -->
+<section id="about-website" class="about" style="padding:50px 20px 30px 20px;text-align:center;">
+  <div style="max-width:700px;margin:0 auto;">
+    <h2 style="margin-bottom:18px;">About ₹ent a Ride</h2>
+    <p style="font-size:1.1rem;line-height:1.7;">
+      ₹ent a Ride is dedicated to making  mobility easy, affordable, and reliable. Our platform allows to rent cars, bikes, and scooters at special discounted rates, ensuring everyone can find the perfect ride for their needs. We focus on safety, convenience, and a seamless booking experience, so you can spend less time worrying about transport and more time enjoying your journey. Whether you need a quick ride to class or a weekend getaway, ₹ent a Ride is your trusted companion on the road.
+    </p>
+  </div>
+</section>
     <footer id="contact">
     <div class="social-icons">
         <i class="fa-brands fa-instagram"></i>
@@ -245,7 +287,8 @@
     <p>Contact us at: info@rentavehicle.com | +9169696969 </p>
     <p>&copy; 2025 ₹ent a Ride. All Rights Reserved.</p>
     </footer>
-        <script src="login.js"></script>
+        <script src="script.js"></script>
+  <script src="booking-filter.js"></script>
 
 
         <!-- Popup Modal -->
@@ -261,3 +304,4 @@
 
     </body>
     </html>
+
